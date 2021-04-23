@@ -1,10 +1,35 @@
 # PyTorch Object Detection and Tracking
-Object detection in images, and tracking across video frames
 
-Full story at:
-https://towardsdatascience.com/object-detection-and-tracking-in-pytorch-b3cf1a696a98
+Object detection in images, and tracking across video frames.
 
-References:
+For more information, please refer to the original author's blog: https://towardsdatascience.com/object-detection-and-tracking-in-pytorch-b3cf1a696a98.
+
+## Preparation
+
+Download the pretrained yolov3 model from https://pjreddie.com/media/files/yolov3.weights. Or you can download the same file with baidu disk:
+
+```
+链接: https://pan.baidu.com/s/1nGwNtNlhBrdJfa1LZMANUg 提取码: 54za \
+```
+
+After downloading, place the file under `config` folder.
+
+## Usage
+
+To detect on images, run the following command:
+
+```bash
+python object_detector.py images/blueangels.jpg
+```
+
+To detect on videos, run the following command:
+
+```bash
+python object_detector.py images/demo_video.mp4
+```
+
+## References
+
 1. YOLOv3: https://pjreddie.com/darknet/yolo/
 2. Erik Lindernoren's YOLO implementation: https://github.com/eriklindernoren/PyTorch-YOLOv3
 3. YOLO paper: https://pjreddie.com/media/files/papers/YOLOv3.pdf
